@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\assets\\scripts\\input\\inputservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\input\\inputservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\assets\\scripts\\input\\iinputservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\input\\iinputservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\assets\\scripts\\installers\\gameinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\installers\\gameinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|c:\\users\\ogun\\unityprojects\\3d-dungeon\\assets\\scripts\\scriptableobject\\playerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scriptableobject\\playerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|c:\\users\\ogun\\unityprojects\\3d-dungeon\\assets\\scripts\\installers\\scriptable\\playerdatainstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\installers\\scriptable\\playerdatainstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T12:59:39.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlayerDataInstaller.cs",
+              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Installers\\Scriptable\\PlayerDataInstaller.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Installers\\Scriptable\\PlayerDataInstaller.cs",
+              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Installers\\Scriptable\\PlayerDataInstaller.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Installers\\Scriptable\\PlayerDataInstaller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T13:38:13.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerData.cs",
+              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\ScriptableObject\\PlayerData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ScriptableObject\\PlayerData.cs",
+              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\ScriptableObject\\PlayerData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ScriptableObject\\PlayerData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T13:35:06.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameInstaller.cs",
+              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Installers\\GameInstaller.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Installers\\GameInstaller.cs",
+              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Installers\\GameInstaller.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Installers\\GameInstaller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T12:56:48.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InputService.cs",
+              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Input\\InputService.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Input\\InputService.cs",
+              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Input\\InputService.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Input\\InputService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T12:50:43.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IInputService.cs",
+              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Input\\IInputService.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Input\\IInputService.cs",
+              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Input\\IInputService.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Input\\IInputService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T12:51:44.33Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
