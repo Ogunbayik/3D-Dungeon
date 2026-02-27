@@ -13,4 +13,5 @@ public class PlayerAnimationController : MonoBehaviour
         _animator.SetFloat(GameConstant.PlayerAnimationData.BLENDX_HASH, moveX);
         _animator.SetFloat(GameConstant.PlayerAnimationData.BLENDZ_HASH, moveZ);
     }
+    public void PlayJumpAnimation() => _animator.SetTrigger(GameConstant.PlayerAnimationData.JUMP_HASH);
 }

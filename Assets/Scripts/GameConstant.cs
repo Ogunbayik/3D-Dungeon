@@ -14,10 +14,12 @@ public static class GameConstant
         private const string SpeedParameter = "MovementSpeed";
         private const string BlendXParameter = "MoveX";
         private const string BlendZParameter = "MoveZ";
+        private const string JumpParameter = "IsJump";
 
         public static readonly int SPEED_HASH = Animator.StringToHash(SpeedParameter);
         public static readonly int BLENDX_HASH = Animator.StringToHash(BlendXParameter);
         public static readonly int BLENDZ_HASH = Animator.StringToHash(BlendZParameter);
+        public static readonly int JUMP_HASH = Animator.StringToHash(JumpParameter);
     }
     public class GameSettings
     {
