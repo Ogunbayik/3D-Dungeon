@@ -6,4 +6,5 @@ public interface IInputService
 {
     float HorizontalInput();
     float VerticalInput();
+    bool PressedJump();
 }

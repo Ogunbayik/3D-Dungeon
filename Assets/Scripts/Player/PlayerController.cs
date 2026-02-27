@@ -1,3 +1,4 @@
+using ModestTree;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,8 +11,7 @@ public class PlayerController : MonoBehaviour
     private PlayerData _data;
 
     private CharacterController _characterController;
-
-    private Vector3 _movementDirection;
+    private PlayerAnimationController _animationControler;
 
     [Inject]
     public void Construct(IInputService input, PlayerData data)
@@ -19,20 +19,24 @@ public class PlayerController : MonoBehaviour
         _input = input;
         _data = data;
     }
-
-    private void Awake() => _characterController = GetComponent<CharacterController>();
-        
-    private void Update()
+    private void Awake()
     {
-        HandleMovement();
+        _characterController = GetComponent<CharacterController>();
+        _animationControler = GetComponent<PlayerAnimationController>();
     }
-
+    private void Update() => HandleMovement();
     private void HandleMovement()
     {
         var horizontal = _input.HorizontalInput();
         var vertical = _input.VerticalInput();
 
-        _movementDirection.Set(horizontal, 0f, vertical);
-        _characterController.SimpleMove(_movementDirection * _data.MovementSpeed);
+        var inputVector = new Vector3(horizontal, 0f, vertical);
+        var movementDirection = Vector3.ClampMagnitude(inputVector, 1f);
+        Vector3 finalMovement = movementDirection * _data.MovementSpeed;
+        
+        _characterController.Move(finalMovement * Time.deltaTime);
+
+        _animationControler.PlayMovementAnimation(movementDirection.magnitude);
+        _animationControler.PlayMovementBlendAnimation(horizontal, vertical);
     }
 }
