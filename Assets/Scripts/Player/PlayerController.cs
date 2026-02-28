@@ -3,9 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Zenject;
+using static UnityEngine.GraphicsBuffer;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Visual References")]
+    [SerializeField] private Transform _bodyVisual;
     [Header("Ground Check Settings")]
     [SerializeField] private Transform _groundCheck;
     [SerializeField] private float _checkRadius;
@@ -22,6 +25,8 @@ public class PlayerController : MonoBehaviour
     private bool _isGrounded;
     private bool _isPressedJump;
 
+    private Vector3 _inputVector;
+
     [Inject]
     public void Construct(IInputService input, PlayerData data)
     {
@@ -31,9 +36,13 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         _characterController = GetComponent<CharacterController>();
-        _animationControler = GetComponent<PlayerAnimationController>();
+        _animationControler = GetComponentInChildren<PlayerAnimationController>();
     }
-    private void Update() => HandleMovement();
+    private void Update()
+    {
+        HandleMovement();
+        HandleMoveRotation();
+    }
     private void HandleMovement()
     {
         _isGrounded = Physics.CheckSphere(_groundCheck.position, _checkRadius, _checkLayer);
@@ -41,8 +50,8 @@ public class PlayerController : MonoBehaviour
         var horizontal = _input.HorizontalInput();
         var vertical = _input.VerticalInput();
 
-        var inputVector = new Vector3(horizontal, 0f, vertical);
-        var movementDirection = Vector3.ClampMagnitude(inputVector, 1f);
+        _inputVector = new Vector3(horizontal, 0f, vertical);
+        var movementDirection = Vector3.ClampMagnitude(_inputVector, 1f);
 
         if (_isGrounded && _velocityY < 0f)
             _velocityY = _data.GroundedGravity;
@@ -65,16 +74,21 @@ public class PlayerController : MonoBehaviour
             _velocityY += Physics.gravity.y * _data.GravityMultiplier * Time.deltaTime;
         }
 
-        _velocityY += Physics.gravity.y * Time.deltaTime;
         Vector3 finalMovement = movementDirection * _data.MovementSpeed;
         finalMovement.y = _velocityY;
 
         _characterController.Move(finalMovement * Time.deltaTime);
 
         _animationControler.PlayMovementAnimation(movementDirection.magnitude);
-        _animationControler.PlayMovementBlendAnimation(horizontal, vertical);
     }
-
+    private void HandleMoveRotation()
+    {
+        if (_inputVector != Vector3.zero)
+        {
+            var targetRotation = Quaternion.LookRotation(_inputVector);
+            _bodyVisual.rotation = Quaternion.Slerp(_bodyVisual.rotation, targetRotation, _data.RotationSpeed * Time.deltaTime);
+        }
+    }
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;

@@ -7,6 +7,7 @@ public class PlayerData : ScriptableObject
 {
     [Header("Movement Settings")]
     [SerializeField] private float _movementSpeed;
+    [SerializeField] private float _rotationSpeed;
     [Header("Jump Settings")]
     [SerializeField] private float _jumpHeight;
     [SerializeField] private float _gravityMultiplier;
@@ -14,6 +15,7 @@ public class PlayerData : ScriptableObject
 
 
     public float MovementSpeed => _movementSpeed;
+    public float RotationSpeed => _rotationSpeed;
     public float JumpHeight => _jumpHeight;
     public float GravityMultiplier => _gravityMultiplier;
     public float GroundedGravity => _groundedGravity;
