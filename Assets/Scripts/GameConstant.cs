@@ -11,11 +11,13 @@ public static class GameConstant
     }
     public class PlayerAnimationData
     {
-        private const string SpeedParameter = "MovementSpeed";
-        private const string JumpParameter = "IsJump";
+        private const string IDLE = "Player_Idle";
+        private const string MOVE = "Player_Move";
+        private const string JUMP = "Player_Jump";
 
-        public static readonly int SPEED_HASH = Animator.StringToHash(SpeedParameter);
-        public static readonly int JUMP_HASH = Animator.StringToHash(JumpParameter);
+        public static readonly int IDLE_HASH = Animator.StringToHash(IDLE);
+        public static readonly int MOVE_HASH = Animator.StringToHash(MOVE);
+        public static readonly int JUMP_HASH = Animator.StringToHash(JUMP);
     }
     public class GameSettings
     {
