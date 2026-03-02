@@ -6,7 +6,7 @@ public class PlayerMovementState : PlayerGroundedState
 {
     private float _transitionTime = 0.1f;
 
-    public PlayerMovementState(PlayerController player) : base(player) { }
+    public PlayerMovementState(PlayerBase player) : base(player) { }
 
     public override void EnterState()
     {

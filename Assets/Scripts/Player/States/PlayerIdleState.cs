@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerIdleState : PlayerGroundedState
 {
-    public PlayerIdleState(PlayerController player) : base(player) { }
+    public PlayerIdleState(PlayerBase player) : base(player) { }
 
     public override void EnterState()
     {

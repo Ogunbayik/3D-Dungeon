@@ -1,0 +1,15 @@
+using UnityEngine;
+using Zenject;
+
+public class EnemyInstaller : MonoInstaller
+{
+    public override void InstallBindings()
+    {
+        Container.Bind<EnemyBase>().FromComponentOnRoot().AsSingle();
+
+        Container.Bind<IState>().To<EnemyPatrolState>().AsSingle();
+        Container.Bind<IState>().To<EnemyChaseState>().AsSingle();
+
+        Container.BindInterfacesAndSelfTo<EnemyStateMachine>().AsSingle().NonLazy();
+    }
+}

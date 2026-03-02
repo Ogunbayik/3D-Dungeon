@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerAttackState : PlayerGroundedState
 {
     private float _transitionTime = 0.01f;
-    public PlayerAttackState(PlayerController player) : base(player) { }
+    public PlayerAttackState(PlayerBase player) : base(player) { }
 
     public override void EnterState()
     {

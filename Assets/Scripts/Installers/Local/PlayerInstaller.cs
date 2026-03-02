@@ -5,7 +5,7 @@ public class PlayerInstaller : MonoInstaller
 {
     public override void InstallBindings()
     {
-        Container.Bind<PlayerController>().FromComponentOnRoot().AsSingle();
+        Container.Bind<PlayerBase>().FromComponentOnRoot().AsSingle();
         Container.Bind<Animator>().FromComponentInHierarchy().AsSingle();
         Container.Bind<PlayerAnimationController>().AsSingle();
 
@@ -14,6 +14,6 @@ public class PlayerInstaller : MonoInstaller
         Container.Bind<IState>().To<PlayerAirborneState>().AsSingle();
         Container.Bind<IState>().To<PlayerAttackState>().AsSingle();
 
-        Container.BindInterfacesAndSelfTo<StateMachine>().AsSingle().NonLazy();
+        Container.BindInterfacesAndSelfTo<PlayerStateMachine>().AsSingle().NonLazy();
     }
 }

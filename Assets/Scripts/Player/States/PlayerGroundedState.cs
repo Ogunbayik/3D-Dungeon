@@ -4,14 +4,14 @@ using UnityEngine;
 
 public abstract class PlayerGroundedState : IState
 {
-    protected StateMachine _stateMachine;
-    protected PlayerController _player;
+    protected BaseStateMachine _stateMachine;
+    protected PlayerBase _player;
     
-    public PlayerGroundedState(PlayerController player)
+    public PlayerGroundedState(PlayerBase player)
     {
         _player = player;
     }
-    public void SetStateMachine(StateMachine stateMachine) => _stateMachine = stateMachine;
+    public void SetStateMachine(BaseStateMachine stateMachine) => _stateMachine = stateMachine;
     public abstract void EnterState();
     public abstract void ExitState();
     public virtual void Tick()

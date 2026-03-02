@@ -6,14 +6,14 @@ public class PlayerAirborneState : IState
 {
     private float _transitionTime = 0.05f;
 
-    private StateMachine _stateMachine;
-    private PlayerController _player;
+    private BaseStateMachine _stateMachine;
+    private PlayerBase _player;
 
-    public PlayerAirborneState(PlayerController player)
+    public PlayerAirborneState(PlayerBase player)
     {
         _player = player;
     }
-    public void SetStateMachine(StateMachine stateMachine) => _stateMachine = stateMachine;
+    public void SetStateMachine(BaseStateMachine stateMachine) => _stateMachine = stateMachine;
     public void EnterState()
     {
         _player.HandleJump();

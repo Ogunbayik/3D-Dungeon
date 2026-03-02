@@ -7,5 +7,5 @@ public interface IState
     void EnterState();
     void ExitState();
     void Tick();
-    void SetStateMachine(StateMachine stateMachine);
+    void SetStateMachine(BaseStateMachine stateMachine);
 }
