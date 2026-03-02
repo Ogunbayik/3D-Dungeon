@@ -58,6 +58,7 @@ public class PlayerController : MonoBehaviour
             _bodyVisual.rotation = Quaternion.Slerp(_bodyVisual.rotation, targetRotation, _data.RotationSpeed * Time.deltaTime);
         }
     }
+    public bool PressedAttack() => _input.PressedAttack();
     public bool PressedJump() => _input.PressedJump();
     public bool IsGrounded() => Physics.CheckSphere(_groundCheck.position, _checkRadius, _checkLayer);
     public bool IsMoving()

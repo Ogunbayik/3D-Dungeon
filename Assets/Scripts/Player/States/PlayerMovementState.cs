@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class PlayerMovementState : PlayerGroundedState
 {
+    private float _transitionTime = 0.1f;
+
     public PlayerMovementState(PlayerController player) : base(player) { }
 
     public override void EnterState()
     {
-        _player.AnimationControler.PlayAnimation(GameConstant.PlayerAnimationData.MOVE_HASH, 0.1f);
+        _player.AnimationControler.PlayAnimation(GameConstant.PlayerAnimationData.MOVE_HASH, _transitionTime);
     }
 
     public override void ExitState()

@@ -14,10 +14,12 @@ public static class GameConstant
         private const string IDLE = "Player_Idle";
         private const string MOVE = "Player_Move";
         private const string JUMP = "Player_Jump";
+        private const string ATTACK = "Player_Attack";
 
         public static readonly int IDLE_HASH = Animator.StringToHash(IDLE);
         public static readonly int MOVE_HASH = Animator.StringToHash(MOVE);
         public static readonly int JUMP_HASH = Animator.StringToHash(JUMP);
+        public static readonly int ATTACK_HASH = Animator.StringToHash(ATTACK);
     }
     public class GameSettings
     {

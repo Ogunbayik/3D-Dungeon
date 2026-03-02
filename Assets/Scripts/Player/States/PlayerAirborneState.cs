@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerAirborneState : IState
 {
+    private float _transitionTime = 0.05f;
+
     private StateMachine _stateMachine;
     private PlayerController _player;
 
@@ -15,9 +17,8 @@ public class PlayerAirborneState : IState
     public void EnterState()
     {
         _player.HandleJump();
-        _player.AnimationControler.PlayAnimation(GameConstant.PlayerAnimationData.JUMP_HASH, 0.1f);
+        _player.AnimationControler.PlayAnimation(GameConstant.PlayerAnimationData.JUMP_HASH, _transitionTime);
     }
-
     public void ExitState()
     {
 

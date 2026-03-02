@@ -16,6 +16,9 @@ public abstract class PlayerGroundedState : IState
     public abstract void ExitState();
     public virtual void Tick()
     {
+        if (_player.PressedAttack())
+            _stateMachine.SwitchState<PlayerAttackState>();
+
         if (_player.PressedJump())
             _stateMachine.SwitchState<PlayerAirborneState>();
     }
