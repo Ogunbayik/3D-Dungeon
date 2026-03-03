@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EnemyChaseState : EnemyBaseState
 {
-
     private PlayerBase _player;
     public EnemyChaseState(EnemyBase enemy) : base(enemy) { }
     public override void EnterState()
@@ -12,6 +11,7 @@ public class EnemyChaseState : EnemyBaseState
         Debug.Log("Chasing!");
         _player = _enemy.CheckPlayerInArea();
         _enemy.SetMovementSpeed(_enemy.Data.ChaseSpeed);
+        _enemy.AnimationController.PlayAnimation(GameConstant.EnemyAnimationData.CHASE_HASH, 0.05f);
     }
     public override void ExitState()
     {

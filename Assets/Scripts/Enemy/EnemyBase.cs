@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Zenject;
 
 public class EnemyBase : MonoBehaviour
 {
+    private AnimationController _animationController;
+
     [Header("Data References")]
     [SerializeField] private EnemyData _data;
     [Header("Check Settings")]
@@ -14,6 +17,10 @@ public class EnemyBase : MonoBehaviour
 
     private Vector3 _initialPosition;
 
+    [Inject]
+    public void Construct(AnimationController animationController) => _animationController = animationController;
+
+    public AnimationController AnimationController => _animationController;
     public EnemyData Data => _data;
     void Start() => _initialPosition = transform.position;
     public void MoveTo(Vector3 targetPosition) => transform.position = Vector3.MoveTowards(transform.position, targetPosition, _movementSpeed * Time.deltaTime);

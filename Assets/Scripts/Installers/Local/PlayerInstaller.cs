@@ -7,7 +7,7 @@ public class PlayerInstaller : MonoInstaller
     {
         Container.Bind<PlayerBase>().FromComponentOnRoot().AsSingle();
         Container.Bind<Animator>().FromComponentInHierarchy().AsSingle();
-        Container.Bind<PlayerAnimationController>().AsSingle();
+        Container.Bind<AnimationController>().AsSingle();
 
         Container.Bind<IState>().To<PlayerIdleState>().AsSingle();
         Container.Bind<IState>().To<PlayerMovementState>().AsSingle();

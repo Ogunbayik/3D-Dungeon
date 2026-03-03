@@ -17,14 +17,14 @@ public class PlayerBase : MonoBehaviour
     private PlayerData _data;
 
     private CharacterController _characterController;
-    private PlayerAnimationController _animationControler;
+    private AnimationController _animationControler;
 
     private float _velocityY;
     public float VelocityY => _velocityY;
-    public PlayerAnimationController AnimationControler => _animationControler;
+    public AnimationController AnimationControler => _animationControler;
 
     [Inject]
-    public void Construct(IInputService input, PlayerData data, PlayerAnimationController animationController)
+    public void Construct(IInputService input, PlayerData data, AnimationController animationController)
     {
         _input = input;
         _data = data;

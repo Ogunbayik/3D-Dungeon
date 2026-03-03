@@ -11,6 +11,7 @@ public class EnemyWaitState : EnemyBaseState
     {
         Debug.Log("Enemy is looking around");
         _waitTimer = _enemy.GetWaitTime();
+        _enemy.AnimationController.PlayAnimation(GameConstant.EnemyAnimationData.WAIT_HASH, 0.1f);
     }
     public override void ExitState()
     {
