@@ -31,11 +31,25 @@ public class EnemyBase : MonoBehaviour
         return _initialPosition + targetPosition;
     }
     public float GetWaitTime() => Random.Range(_data.MinWaitTime, _data.MaxWaitTime);
-    public bool CheckPlayerInArea() => Physics.CheckSphere(transform.position, _checkRadius, _checkLayer);
+    public PlayerBase CheckPlayerInArea()
+    {
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, _checkRadius, _checkLayer);
+
+        if (hitColliders.Length > 0)
+            return hitColliders[0].transform.GetComponent<PlayerBase>();
+        else
+            return null;
+    }
     private void OnDrawGizmos()
     {
+        //Check Distance for Player
         Gizmos.color = Color.green;
 
-        Gizmos.DrawWireSphere(transform.position, 2f);
+        Gizmos.DrawWireSphere(transform.position, _checkRadius);
+
+        //Patrol distance for Enemy
+        Gizmos.color = Color.blue;
+
+        Gizmos.DrawWireSphere(_initialPosition, _data.PatrolDistance);
     }
 }

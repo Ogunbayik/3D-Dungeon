@@ -2,26 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyWaitState : IState
+public class EnemyWaitState : EnemyBaseState
 {
-    private EnemyBase _enemy;
-    private BaseStateMachine _stateMachine;
-
     private float _waitTimer;
 
-    public EnemyWaitState(EnemyBase enemy) => _enemy = enemy;
-    public void SetStateMachine(BaseStateMachine stateMachine) => _stateMachine = stateMachine;
-    public void EnterState()
+    public EnemyWaitState(EnemyBase enemy) : base(enemy) { }
+    public override void EnterState()
     {
         Debug.Log("Enemy is looking around");
         _waitTimer = _enemy.GetWaitTime();
     }
-    public void ExitState()
+    public override void ExitState()
     {
 
     }
-    public void Tick()
+    public override void Tick()
     {
+        base.Tick();
+
         _waitTimer -= Time.deltaTime;
 
         if(_waitTimer <= 0)

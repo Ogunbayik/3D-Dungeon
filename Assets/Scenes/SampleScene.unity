@@ -762,10 +762,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data: {fileID: 11400000, guid: edb89ecd7d2266e4da1cdf7732e7fb40, type: 2}
-  _checkRadius: 0
+  _checkRadius: 5
   _checkLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
 --- !u!1 &1906556493
 GameObject:
   m_ObjectHideFlags: 0

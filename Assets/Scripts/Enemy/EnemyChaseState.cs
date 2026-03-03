@@ -2,25 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyChaseState : IState
+public class EnemyChaseState : EnemyBaseState
 {
-    public void EnterState()
+
+    private PlayerBase _player;
+    public EnemyChaseState(EnemyBase enemy) : base(enemy) { }
+    public override void EnterState()
     {
-        Debug.Log("Enemy is chasing");
+        Debug.Log("Chasing!");
+        _player = _enemy.CheckPlayerInArea();
+        _enemy.SetMovementSpeed(_enemy.Data.ChaseSpeed);
     }
-
-    public void ExitState()
+    public override void ExitState()
     {
 
     }
-
-    public void SetStateMachine(BaseStateMachine stateMachine)
+    public override void Tick()
     {
+        _enemy.MoveTo(_player.transform.position);
 
-    }
-
-    public void Tick()
-    {
-        throw new System.NotImplementedException();
+        if (_enemy.CheckPlayerInArea() == null)
+            _stateMachine.SwitchState<EnemyPatrolState>();
     }
 }

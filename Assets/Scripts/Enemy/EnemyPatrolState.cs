@@ -2,26 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyPatrolState : IState
+public class EnemyPatrolState : EnemyBaseState
 {
-    private EnemyBase _enemy;
-    private BaseStateMachine _stateMachine;
-
     private Vector3 _patrolPosition;
 
-    public EnemyPatrolState(EnemyBase enemy) => _enemy = enemy;
-    public void SetStateMachine(BaseStateMachine stateMachine) => _stateMachine = stateMachine;
-    public void EnterState()
+    public EnemyPatrolState(EnemyBase enemy) : base(enemy) { }
+    public override void EnterState()
     {
         _patrolPosition = _enemy.GetPatrolPosition();
         _enemy.SetMovementSpeed(_enemy.Data.MovementSpeed);
     }
-    public void ExitState()
+    public override void ExitState()
     {
 
     }
-    public void Tick()
+    public override void Tick()
     {
+        base.Tick();
+
         var distanceToTarget = Vector3.Distance(_enemy.transform.position, _patrolPosition);
         if (distanceToTarget <= 0.1f)
             _stateMachine.SwitchState<EnemyWaitState>();
