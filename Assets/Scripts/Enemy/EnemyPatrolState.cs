@@ -24,9 +24,7 @@ public class EnemyPatrolState : IState
     {
         var distanceToTarget = Vector3.Distance(_enemy.transform.position, _patrolPosition);
         if (distanceToTarget <= 0.1f)
-        {
-            Debug.Log("Enemy is changing State");
-        }
+            _stateMachine.SwitchState<EnemyWaitState>();
 
         _enemy.MoveTo(_patrolPosition);
     }

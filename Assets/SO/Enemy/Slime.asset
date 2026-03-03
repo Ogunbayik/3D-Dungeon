@@ -15,3 +15,5 @@ MonoBehaviour:
   _movementSpeed: 1
   _rotationSpeed: 0
   _patrolDistance: 10
+  _minWaitTime: 1.5
+  _maxWaitTime: 3

@@ -30,6 +30,7 @@ public class EnemyBase : MonoBehaviour
         var targetPosition = new Vector3(randomPosition.x, 0f, randomPosition.z) * _data.PatrolDistance;
         return _initialPosition + targetPosition;
     }
+    public float GetWaitTime() => Random.Range(_data.MinWaitTime, _data.MaxWaitTime);
     public bool CheckPlayerInArea() => Physics.CheckSphere(transform.position, _checkRadius, _checkLayer);
     private void OnDrawGizmos()
     {

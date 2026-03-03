@@ -3,56 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\assets\\scripts\\enemy\\enemybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|c:\\users\\ogun\\unityprojects\\3d-dungeon\\assets\\scripts\\enemy\\enemypatrolstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemypatrolstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\assets\\scripts\\enemy\\enemystatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemystatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\assets\\scripts\\scriptableobject\\enemydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scriptableobject\\enemydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\assets\\scripts\\enemy\\type\\slime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\type\\slime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\assets\\scripts\\scriptableobject\\basedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scriptableobject\\basedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|c:\\users\\ogun\\unityprojects\\3d-dungeon\\assets\\scripts\\enemy\\enemybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|c:\\users\\ogun\\unityprojects\\3d-dungeon\\assets\\scripts\\enemy\\enemywaitstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemywaitstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\assets\\scripts\\installers\\local\\enemyinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\installers\\local\\enemyinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\assets\\scripts\\scriptableobject\\playerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scriptableobject\\playerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\assets\\scripts\\scriptableobject\\basedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scriptableobject\\basedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\assets\\scripts\\enemy\\enemychasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemychasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\assets\\scripts\\player\\states\\playergroundedstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\states\\playergroundedstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\assets\\scripts\\enemy\\enemystatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemystatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\assets\\scripts\\installers\\local\\playerinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\installers\\local\\playerinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\assets\\scripts\\player\\states\\basestatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\states\\basestatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\assets\\scripts\\interface\\istate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interface\\istate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\assets\\scripts\\enemy\\enemypatrolstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemypatrolstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,73 +38,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "EnemyWaitState.cs",
+              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Enemy\\EnemyWaitState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyWaitState.cs",
+              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Enemy\\EnemyWaitState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyWaitState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T12:58:57.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "EnemyPatrolState.cs",
               "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Enemy\\EnemyPatrolState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyPatrolState.cs",
               "ToolTip": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Enemy\\EnemyPatrolState.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyPatrolState.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAiwBAAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAIwBoAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-02T20:06:27.002Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "EnemyInstaller.cs",
               "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Installers\\Local\\EnemyInstaller.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Installers\\Local\\EnemyInstaller.cs",
               "ToolTip": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Installers\\Local\\EnemyInstaller.cs",
               "RelativeToolTip": "Assets\\Scripts\\Installers\\Local\\EnemyInstaller.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-02T19:47:34.934Z"
+              "WhenOpened": "2026-03-02T19:47:34.934Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Slime.cs",
-              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Enemy\\Type\\Slime.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\Type\\Slime.cs",
-              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Enemy\\Type\\Slime.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy\\Type\\Slime.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-03T12:38:21.429Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "EnemyBase.cs",
               "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Enemy\\EnemyBase.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyBase.cs",
               "ToolTip": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Enemy\\EnemyBase.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyBase.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAADwvx8AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAIwCAAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-02T19:15:32.36Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PlayerData.cs",
-              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\ScriptableObject\\PlayerData.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ScriptableObject\\PlayerData.cs",
-              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\ScriptableObject\\PlayerData.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ScriptableObject\\PlayerData.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-03T12:26:44.782Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "BaseData.cs",
               "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\ScriptableObject\\BaseData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ScriptableObject\\BaseData.cs",
@@ -136,11 +102,12 @@
               "RelativeToolTip": "Assets\\Scripts\\ScriptableObject\\BaseData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-03T12:25:15.344Z"
+              "WhenOpened": "2026-03-03T12:25:15.344Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "EnemyData.cs",
               "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\ScriptableObject\\EnemyData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ScriptableObject\\EnemyData.cs",
@@ -148,23 +115,12 @@
               "RelativeToolTip": "Assets\\Scripts\\ScriptableObject\\EnemyData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-03T12:16:19.095Z"
+              "WhenOpened": "2026-03-03T12:16:19.095Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EnemyChaseState.cs",
-              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Enemy\\EnemyChaseState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyChaseState.cs",
-              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Enemy\\EnemyChaseState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyChaseState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-02T20:15:07.914Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "EnemyStateMachine.cs",
               "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Enemy\\EnemyStateMachine.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyStateMachine.cs",
@@ -172,55 +128,8 @@
               "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyStateMachine.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-02T19:37:28.858Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PlayerGroundedState.cs",
-              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Player\\States\\PlayerGroundedState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\States\\PlayerGroundedState.cs",
-              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Player\\States\\PlayerGroundedState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\States\\PlayerGroundedState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-02T16:36:03.559Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IState.cs",
-              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Interface\\IState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Interface\\IState.cs",
-              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Interface\\IState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Interface\\IState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-02T19:34:00.318Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PlayerInstaller.cs",
-              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Installers\\Local\\PlayerInstaller.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Installers\\Local\\PlayerInstaller.cs",
-              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Installers\\Local\\PlayerInstaller.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Installers\\Local\\PlayerInstaller.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-02T19:27:52.556Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "BaseStateMachine.cs",
-              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Player\\States\\BaseStateMachine.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\States\\BaseStateMachine.cs",
-              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Player\\States\\BaseStateMachine.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\States\\BaseStateMachine.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAYAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-02T19:23:42.821Z"
+              "WhenOpened": "2026-03-02T19:37:28.858Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\assets\\scripts\\enemy\\enemybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|c:\\users\\ogun\\unityprojects\\3d-dungeon\\assets\\scripts\\enemy\\enemypatrolstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemypatrolstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\assets\\scripts\\scriptableobject\\enemydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scriptableobject\\enemydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\assets\\scripts\\enemy\\enemybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\assets\\scripts\\enemy\\type\\slime.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,17 +62,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "EnemyPatrolState.cs",
               "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Enemy\\EnemyPatrolState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyPatrolState.cs",
               "ToolTip": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Enemy\\EnemyPatrolState.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyPatrolState.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA+wBAAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAiwBAAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-02T20:06:27.002Z",
               "EditorCaption": ""
@@ -103,15 +103,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "EnemyBase.cs",
               "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Enemy\\EnemyBase.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyBase.cs",
               "ToolTip": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\Enemy\\EnemyBase.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAADwvx8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-02T19:15:32.36Z"
+              "WhenOpened": "2026-03-02T19:15:32.36Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -139,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "EnemyData.cs",
               "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\Scripts\\ScriptableObject\\EnemyData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ScriptableObject\\EnemyData.cs",

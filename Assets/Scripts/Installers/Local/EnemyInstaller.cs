@@ -9,6 +9,7 @@ public class EnemyInstaller : MonoInstaller
 
         Container.Bind<IState>().To<EnemyPatrolState>().AsSingle();
         Container.Bind<IState>().To<EnemyChaseState>().AsSingle();
+        Container.Bind<IState>().To<EnemyWaitState>().AsSingle();
 
         Container.BindInterfacesAndSelfTo<EnemyStateMachine>().AsSingle().NonLazy();
     }
