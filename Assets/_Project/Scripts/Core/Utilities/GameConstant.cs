@@ -33,6 +33,11 @@ public static class GameConstant
         public static readonly int CHASE_HASH = Animator.StringToHash(CHASE);
         public static readonly int ATTACK_HASH = Animator.StringToHash(ATTACK);
     }
+    public class AnimationSettings
+    {
+        public const float QUICK_TRANSITION = 0.05f;
+        public const float SMOOTH_TRANSITION = 0.2f;
+    }
     public class GameSettings
     {
         public const float JumpGravityCoefficient = -2f;

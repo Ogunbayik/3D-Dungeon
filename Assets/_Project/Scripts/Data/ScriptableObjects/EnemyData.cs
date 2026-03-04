@@ -11,9 +11,12 @@ public class EnemyData : BaseData
     [Header("Waiting Settings")]
     [SerializeField] private float _minWaitTime;
     [SerializeField] private float _maxWaitTime;
+    [Header("Attack Settings")]
+    [SerializeField] private float _attackDistance;
 
     public float PatrolDistance => _patrolDistance;
     public float ChaseSpeed => _chaseSpeed;
     public float MinWaitTime => _minWaitTime;
     public float MaxWaitTime => _maxWaitTime;
+    public float AttackDistance => _attackDistance;
 }

@@ -11,7 +11,7 @@ public class EnemyChaseState : EnemyBaseState
         Debug.Log("Chasing!");
         _player = _enemy.CheckPlayerInArea();
         _enemy.SetMovementSpeed(_enemy.Data.ChaseSpeed);
-        _enemy.AnimationController.PlayAnimation(GameConstant.EnemyAnimationData.CHASE_HASH, 0.05f);
+        _enemy.AnimationController.PlayAnimation(GameConstant.EnemyAnimationData.CHASE_HASH, GameConstant.AnimationSettings.QUICK_TRANSITION);
     }
     public override void ExitState()
     {
@@ -19,6 +19,10 @@ public class EnemyChaseState : EnemyBaseState
     }
     public override void Tick()
     {
+        var distanceToPlayer = Vector3.Distance(_enemy.transform.position, _player.transform.position);
+        if (distanceToPlayer <= _enemy.Data.AttackDistance)
+            _stateMachine.SwitchState<EnemyAttackState>();
+
         _enemy.MoveTo(_player.transform.position);
 
         if (_enemy.CheckPlayerInArea() == null)

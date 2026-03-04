@@ -18,3 +18,4 @@ MonoBehaviour:
   _chaseSpeed: 2
   _minWaitTime: 1.5
   _maxWaitTime: 3
+  _attackDistance: 1

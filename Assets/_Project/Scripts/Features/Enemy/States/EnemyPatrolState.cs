@@ -11,7 +11,7 @@ public class EnemyPatrolState : EnemyBaseState
     {
         _patrolPosition = _enemy.GetPatrolPosition();
         _enemy.SetMovementSpeed(_enemy.Data.MovementSpeed);
-        _enemy.AnimationController.PlayAnimation(GameConstant.EnemyAnimationData.MOVE_HASH, 0.1f);
+        _enemy.AnimationController.PlayAnimation(GameConstant.EnemyAnimationData.MOVE_HASH, GameConstant.AnimationSettings.QUICK_TRANSITION);
     }
     public override void ExitState()
     {
