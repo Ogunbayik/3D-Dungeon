@@ -24,6 +24,7 @@ public class EnemyChaseState : EnemyBaseState
             _stateMachine.SwitchState<EnemyAttackState>();
 
         _enemy.MoveTo(_player.transform.position);
+        _enemy.HandleRotation(_player.transform.position);
 
         if (_enemy.CheckPlayerInArea() == null)
             _stateMachine.SwitchState<EnemyPatrolState>();

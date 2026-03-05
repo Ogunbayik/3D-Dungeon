@@ -26,5 +26,6 @@ public class EnemyPatrolState : EnemyBaseState
             _stateMachine.SwitchState<EnemyWaitState>();
 
         _enemy.MoveTo(_patrolPosition);
+        _enemy.HandleRotation(_patrolPosition);
     }
 }

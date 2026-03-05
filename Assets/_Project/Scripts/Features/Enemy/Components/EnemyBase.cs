@@ -9,6 +9,7 @@ public class EnemyBase : MonoBehaviour
 
     [Header("Data References")]
     [SerializeField] private EnemyData _data;
+    [SerializeField] private Transform _enemyVisual;
     [Header("Check Settings")]
     [SerializeField] private float _checkRadius;
     [SerializeField] private LayerMask _checkLayer;
@@ -46,6 +47,17 @@ public class EnemyBase : MonoBehaviour
             return hitColliders[0].transform.GetComponent<PlayerBase>();
         else
             return null;
+    }
+    public void HandleRotation(Vector3 targetPosition)
+    {
+        Vector3 targetDirection = (targetPosition - transform.position).normalized;
+        targetDirection.y = 0f;
+
+        if (targetDirection != Vector3.zero)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(targetDirection);
+            _enemyVisual.rotation = Quaternion.Slerp(_enemyVisual.rotation, targetRotation, 5f * Time.deltaTime);
+        }
     }
     private void OnDrawGizmos()
     {
