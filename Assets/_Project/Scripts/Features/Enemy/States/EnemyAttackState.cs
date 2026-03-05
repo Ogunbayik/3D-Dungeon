@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class EnemyAttackState : EnemyBaseState
 {
-    public EnemyAttackState(EnemyBase enemy) : base(enemy) { }
+    public EnemyAttackState(EnemyBase enemy, EnemyHealthController healthController) : base(enemy, healthController) { }
 
     public override void EnterState()
     {
-        Debug.Log("Start Attacking");
+        base.EnterState();
+
         _enemy.AnimationController.PlayAnimation(GameConstant.EnemyAnimationData.ATTACK_HASH, GameConstant.AnimationSettings.QUICK_TRANSITION);
     }
 
     public override void ExitState()
     {
-
+        base.ExitState();
     }
     public override void Tick()
     {

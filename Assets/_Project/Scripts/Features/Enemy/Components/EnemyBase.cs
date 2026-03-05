@@ -19,7 +19,10 @@ public class EnemyBase : MonoBehaviour
     private Vector3 _initialPosition;
 
     [Inject]
-    public void Construct(AnimationController animationController) => _animationController = animationController;
+    public void Construct(AnimationController animationController)
+    {
+        _animationController = animationController;
+    }
 
     public AnimationController AnimationController => _animationController;
     public EnemyData Data => _data;

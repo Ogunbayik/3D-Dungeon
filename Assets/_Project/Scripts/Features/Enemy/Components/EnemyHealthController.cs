@@ -21,12 +21,13 @@ public class EnemyHealthController : MonoBehaviour
     {
         _currentHealth -= damageAmount;
 
-        OnHealthChanged?.Invoke(_currentHealth);
-
         if(_currentHealth <= 0)
         {
             _currentHealth = 0;
             OnDeath?.Invoke();
+            return;
         }
+
+        OnHealthChanged?.Invoke(_currentHealth);
     }
 }

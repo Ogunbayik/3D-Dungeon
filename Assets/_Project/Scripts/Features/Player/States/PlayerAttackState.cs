@@ -34,10 +34,7 @@ public class PlayerAttackState : PlayerGroundedState
 
         var target = _player.HasValidTarget();
         if (target != null)
-        {
-            _player.Test(target);
             target.TakeDamage(_player.Data.AttackDamage);
-        }
     }
 
 }

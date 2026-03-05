@@ -92,10 +92,6 @@ public class PlayerBase : MonoBehaviour
 
         return inputDirection;
     }
-    public void Test(EnemyHealthController enemy)
-    {
-        Debug.Log($"{enemy.gameObject.name} is taken damage.. Damage: {_data.AttackDamage}");
-    }
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;

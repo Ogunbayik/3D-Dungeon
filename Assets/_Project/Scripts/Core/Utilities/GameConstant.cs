@@ -27,11 +27,15 @@ public static class GameConstant
         private const string MOVE = "Enemy_Move";
         private const string CHASE = "Enemy_Chase";
         private const string ATTACK = "Enemy_Attack";
+        private const string GET_HIT = "Enemy_GetHit";
+        private const string DEATH = "Enemy_Death";
 
         public static readonly int WAIT_HASH = Animator.StringToHash(WAIT);
         public static readonly int MOVE_HASH = Animator.StringToHash(MOVE);
         public static readonly int CHASE_HASH = Animator.StringToHash(CHASE);
         public static readonly int ATTACK_HASH = Animator.StringToHash(ATTACK);
+        public static readonly int GET_HIT_HASH = Animator.StringToHash(GET_HIT);
+        public static readonly int DEATH_HASH = Animator.StringToHash(DEATH);
     }
     public class AnimationSettings
     {

@@ -6,16 +6,18 @@ public class EnemyPatrolState : EnemyBaseState
 {
     private Vector3 _patrolPosition;
 
-    public EnemyPatrolState(EnemyBase enemy) : base(enemy) { }
+    public EnemyPatrolState(EnemyBase enemy, EnemyHealthController healthController) : base(enemy, healthController) { }
     public override void EnterState()
     {
+        base.EnterState();
+
         _patrolPosition = _enemy.GetPatrolPosition();
         _enemy.SetMovementSpeed(_enemy.Data.MovementSpeed);
         _enemy.AnimationController.PlayAnimation(GameConstant.EnemyAnimationData.MOVE_HASH, GameConstant.AnimationSettings.QUICK_TRANSITION);
     }
     public override void ExitState()
     {
-
+        base.ExitState();
     }
     public override void Tick()
     {
