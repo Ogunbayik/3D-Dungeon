@@ -15,11 +15,13 @@ public static class GameConstant
         private const string MOVE = "Player_Move";
         private const string JUMP = "Player_Jump";
         private const string ATTACK = "Player_Attack";
+        private const string DEATH = "Player_Death";
 
         public static readonly int IDLE_HASH = Animator.StringToHash(IDLE);
         public static readonly int MOVE_HASH = Animator.StringToHash(MOVE);
         public static readonly int JUMP_HASH = Animator.StringToHash(JUMP);
         public static readonly int ATTACK_HASH = Animator.StringToHash(ATTACK);
+        public static readonly int DEATH_HASH = Animator.StringToHash(DEATH);
     }
     public class EnemyAnimationData
     {

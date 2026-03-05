@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class PlayerIdleState : PlayerGroundedState
 {
-    public PlayerIdleState(PlayerBase player) : base(player) { }
-
+    public PlayerIdleState(PlayerBase player, PlayerHealthController healthController) : base(player, healthController) { }
     public override void EnterState()
     {
+        base.EnterState();
         _player.AnimationControler.PlayAnimation(GameConstant.PlayerAnimationData.IDLE_HASH, GameConstant.AnimationSettings.QUICK_TRANSITION);
     }
 
     public override void ExitState()
     {
-
+        base.ExitState();
     }
     public override void Tick()
     {

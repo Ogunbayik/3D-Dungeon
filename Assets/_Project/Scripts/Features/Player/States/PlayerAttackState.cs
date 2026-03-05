@@ -6,15 +6,16 @@ using System.Threading;
 public class PlayerAttackState : PlayerGroundedState
 {
     private CancellationTokenSource _cts;
-    public PlayerAttackState(PlayerBase player) : base(player) { }
-
+    public PlayerAttackState(PlayerBase player, PlayerHealthController healthController) : base(player, healthController) { }
     public override void EnterState()
     {
+        base.EnterState();
         _cts = new CancellationTokenSource();
         AttackSequence(_cts.Token).Forget();
     }
     public override void ExitState()
     {
+        base.ExitState();
         _cts?.Cancel();
         _cts?.Dispose();
     }

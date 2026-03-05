@@ -2,28 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerAirborneState : IState
+public class PlayerAirborneState : PlayerBaseState
 {
-    private float _transitionTime = 0.05f;
-
-    private BaseStateMachine _stateMachine;
-    private PlayerBase _player;
-
-    public PlayerAirborneState(PlayerBase player)
+    public PlayerAirborneState(PlayerBase player, PlayerHealthController healthController) : base(player, healthController) { }
+    public override void EnterState()
     {
-        _player = player;
-    }
-    public void SetStateMachine(BaseStateMachine stateMachine) => _stateMachine = stateMachine;
-    public void EnterState()
-    {
+        base.EnterState();
+
         _player.HandleJump();
-        _player.AnimationControler.PlayAnimation(GameConstant.PlayerAnimationData.JUMP_HASH, _transitionTime);
+        _player.AnimationControler.PlayAnimation(GameConstant.PlayerAnimationData.JUMP_HASH, GameConstant.AnimationSettings.QUICK_TRANSITION);
     }
-    public void ExitState()
-    {
-
-    }
-    public void Tick()
+    public override void ExitState() => base.ExitState();
+    public override void Tick()
     {
         var direction = _player.GetInputDirection();
 
