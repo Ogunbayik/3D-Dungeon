@@ -127,6 +127,37 @@ Transform:
   - {fileID: 7551625129696447651}
   m_Father: {fileID: 3777581290437346639}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2225001153598401263
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6389069617594102764}
+  m_Layer: 8
+  m_Name: AttackCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6389069617594102764
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2225001153598401263}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3777581290437346639}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2239256955264458658
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,6 +214,10 @@ MonoBehaviour:
   _checkLayer:
     serializedVersion: 2
     m_Bits: 128
+  _attackRadius: 0
+  _playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &5454663350393245934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,7 +230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc9a49eaaf760c941b3de9535996f9b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 100
+  _maxHealth: 21
 --- !u!114 &8592491445483323745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -310,6 +345,7 @@ Transform:
   m_Children:
   - {fileID: 4930379017679999611}
   - {fileID: 7207530003914046071}
+  - {fileID: 6389069617594102764}
   m_Father: {fileID: 3839051581981430341}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &648316140790428682

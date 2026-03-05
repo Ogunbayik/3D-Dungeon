@@ -13,6 +13,9 @@ public class EnemyBase : MonoBehaviour
     [Header("Check Settings")]
     [SerializeField] private float _checkRadius;
     [SerializeField] private LayerMask _checkLayer;
+    [Header("Attack Settings")]
+    [SerializeField] private Transform _attackCheck;
+    [SerializeField] private float _attackRadius;
     
     private float _movementSpeed;
 
@@ -66,6 +69,19 @@ public class EnemyBase : MonoBehaviour
             _enemyVisual.rotation = Quaternion.Slerp(_enemyVisual.rotation, targetRotation, _data.RotationSpeed * Time.deltaTime);
         }
     }
+    public PlayerHealthController HasHitTarget()
+    {
+        Collider[] hitColliders = new Collider[1];
+
+        var targetCollider = Physics.OverlapSphereNonAlloc(_attackCheck.transform.position, _attackRadius, hitColliders, _checkLayer);
+
+        if (targetCollider > 0)
+        {
+            return hitColliders[0].GetComponent<PlayerHealthController>();
+        }
+        else
+            return null;
+    }
     private void OnDrawGizmos()
     {
         //Check Distance for Player
@@ -77,5 +93,9 @@ public class EnemyBase : MonoBehaviour
         Gizmos.color = Color.blue;
 
         Gizmos.DrawWireSphere(_initialPosition, _data.PatrolDistance);
+
+        //Attack distance for enemy
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(_attackCheck.transform.position, _attackRadius);
     }
 }
