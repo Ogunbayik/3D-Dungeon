@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Slime
   m_EditorClassIdentifier: 
   _movementSpeed: 1
-  _rotationSpeed: 0
+  _rotationSpeed: 3
   _patrolDistance: 8
   _chaseSpeed: 2
   _minWaitTime: 1.5
   _maxWaitTime: 3
-  _attackDistance: 1
+  _attackDistance: 1.2

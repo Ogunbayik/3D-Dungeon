@@ -8,8 +8,7 @@ public class PlayerIdleState : PlayerGroundedState
 
     public override void EnterState()
     {
-        Debug.Log("Player is Idle!");
-        _player.AnimationControler.PlayAnimation(GameConstant.PlayerAnimationData.IDLE_HASH, 0.1f);
+        _player.AnimationControler.PlayAnimation(GameConstant.PlayerAnimationData.IDLE_HASH, GameConstant.AnimationSettings.QUICK_TRANSITION);
     }
 
     public override void ExitState()

@@ -17,3 +17,5 @@ MonoBehaviour:
   _jumpHeight: 6
   _gravityMultiplier: 3
   _groundedGravity: -2
+  _attackCheckTime: 0.22
+  _attackDamage: 10

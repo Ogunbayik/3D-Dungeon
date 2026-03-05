@@ -24,7 +24,11 @@ public class EnemyBase : MonoBehaviour
     public AnimationController AnimationController => _animationController;
     public EnemyData Data => _data;
     void Start() => _initialPosition = transform.position;
-    public void MoveTo(Vector3 targetPosition) => transform.position = Vector3.MoveTowards(transform.position, targetPosition, _movementSpeed * Time.deltaTime);
+    public void MoveTo(Vector3 targetPosition)
+    {
+        targetPosition.y = 0f;
+        transform.position = Vector3.MoveTowards(transform.position, targetPosition, _movementSpeed * Time.deltaTime);
+    }
     public void SetMovementSpeed(float speed)
     {
         if (_movementSpeed == speed) return;
@@ -56,7 +60,7 @@ public class EnemyBase : MonoBehaviour
         if (targetDirection != Vector3.zero)
         {
             Quaternion targetRotation = Quaternion.LookRotation(targetDirection);
-            _enemyVisual.rotation = Quaternion.Slerp(_enemyVisual.rotation, targetRotation, 5f * Time.deltaTime);
+            _enemyVisual.rotation = Quaternion.Slerp(_enemyVisual.rotation, targetRotation, _data.RotationSpeed * Time.deltaTime);
         }
     }
     private void OnDrawGizmos()

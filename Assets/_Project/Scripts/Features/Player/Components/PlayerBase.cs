@@ -11,6 +11,10 @@ public class PlayerBase : MonoBehaviour
     [SerializeField] private Transform _groundCheck;
     [SerializeField] private float _checkRadius;
     [SerializeField] private LayerMask _checkLayer;
+    [Header("Attack Check Settings")]
+    [SerializeField] private Transform _attackCheck;
+    [SerializeField] private float _attackRadius;
+    [SerializeField] private LayerMask _attackLayer;
 
     private IInputService _input;
 
@@ -21,6 +25,7 @@ public class PlayerBase : MonoBehaviour
 
     private float _velocityY;
     public float VelocityY => _velocityY;
+    public PlayerData Data => _data;
     public AnimationController AnimationControler => _animationControler;
 
     [Inject]
@@ -61,6 +66,18 @@ public class PlayerBase : MonoBehaviour
     public bool PressedAttack() => _input.PressedAttack();
     public bool PressedJump() => _input.PressedJump();
     public bool IsGrounded() => Physics.CheckSphere(_groundCheck.position, _checkRadius, _checkLayer);
+    public EnemyHealthController HasValidTarget()
+    {
+        Collider[] hitColliders = new Collider[1];
+        int enemyColliders = Physics.OverlapSphereNonAlloc(_attackCheck.position, _attackRadius, hitColliders, _attackLayer);
+
+        if (enemyColliders > 0)
+        {
+            return hitColliders[0].GetComponent<EnemyHealthController>();
+        }
+
+        return null;
+    }
     public bool IsMoving()
     {
         var inputDirection = GetInputDirection();
@@ -75,11 +92,18 @@ public class PlayerBase : MonoBehaviour
 
         return inputDirection;
     }
-
+    public void Test(EnemyHealthController enemy)
+    {
+        Debug.Log($"{enemy.gameObject.name} is taken damage.. Damage: {_data.AttackDamage}");
+    }
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;
 
-        Gizmos.DrawSphere(_groundCheck.position, _checkRadius);
+        Gizmos.DrawWireSphere(_groundCheck.position, _checkRadius);
+
+        Gizmos.color = Color.green;
+
+        Gizmos.DrawWireSphere(_attackCheck.position, _attackRadius);
     }
 }
