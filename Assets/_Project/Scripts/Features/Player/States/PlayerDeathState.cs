@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Zenject;
 
 public class PlayerDeathState : PlayerGroundedState
 {
-    public PlayerDeathState(PlayerBase player, PlayerHealthController healthController) : base(player, healthController) { }
+    public PlayerDeathState(PlayerBase player, SignalBus signalBus) : base(player, signalBus) { }
     public override void EnterState()
     {
         //TODO Ölüm Sequence kurulabilir. ölüm animasyonu - Kamera yakýnlaþmasý - Tekrar doðma UI panel

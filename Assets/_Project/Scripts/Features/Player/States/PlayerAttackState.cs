@@ -2,11 +2,12 @@ using Cysharp.Threading.Tasks;
 using System;
 using System.Diagnostics;
 using System.Threading;
+using Zenject;
 
 public class PlayerAttackState : PlayerGroundedState
 {
     private CancellationTokenSource _cts;
-    public PlayerAttackState(PlayerBase player, PlayerHealthController healthController) : base(player, healthController) { }
+    public PlayerAttackState(PlayerBase player, SignalBus signalBus) : base(player, signalBus) { }
     public override void EnterState()
     {
         base.EnterState();

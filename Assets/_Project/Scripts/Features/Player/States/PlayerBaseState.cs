@@ -2,25 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using MyGame.Core.Enums;
+using Zenject;
 
 public abstract class PlayerBaseState : IState
 {
+    private SignalBus _signalBus;
+
     protected PlayerBase _player;
     protected BaseStateMachine _stateMachine;
-    protected PlayerHealthController _healthController;
-    public PlayerBaseState(PlayerBase player, PlayerHealthController healthController)
+    public PlayerBaseState(PlayerBase player, SignalBus signalBus)
     {
         _player = player;
-        _healthController = healthController;
+        _signalBus = signalBus;
     }
     public void SetStateMachine(BaseStateMachine stateMachine) => _stateMachine = stateMachine;
     public virtual void EnterState()
     {
-        _healthController.OnDeath += HealthController_OnDeath;
+        _signalBus.Subscribe<GameSignal.OnPlayerModeChangedSignal>(OnPlayerDeath);
     }
     public virtual void ExitState()
     {
-        _healthController.OnDeath -= HealthController_OnDeath;
+        _signalBus.Unsubscribe<GameSignal.OnPlayerModeChangedSignal>(OnPlayerDeath);
+    }
+    public void OnPlayerDeath(GameSignal.OnPlayerModeChangedSignal signal)
+    {
+        if (signal.NewMode != PlayerMode.Death)
+            return;
+
+        _stateMachine.SwitchState<PlayerDeathState>();
     }
     private void HealthController_OnDeath() => _stateMachine.SwitchState<PlayerDeathState>();
     public abstract void Tick();

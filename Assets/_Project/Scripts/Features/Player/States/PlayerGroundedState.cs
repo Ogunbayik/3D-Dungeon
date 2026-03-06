@@ -2,10 +2,11 @@ using MyGame.Core.Enums;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Zenject;
 
 public abstract class PlayerGroundedState : PlayerBaseState
 {
-    protected PlayerGroundedState(PlayerBase player, PlayerHealthController healthController) : base(player, healthController) { }
+    protected PlayerGroundedState(PlayerBase player, SignalBus signalBus) : base(player, signalBus) { }
     public override void EnterState() => base.EnterState();
     public override void ExitState() => base.ExitState();
     public override void Tick()

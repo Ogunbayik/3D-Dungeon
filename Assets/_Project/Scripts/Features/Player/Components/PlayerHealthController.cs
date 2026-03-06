@@ -2,14 +2,18 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Zenject;
 
 public class PlayerHealthController : MonoBehaviour
 {
-    public event Action OnDeath;
+    private SignalBus _signalBus;
 
     public int HealthCount;
 
     private float _currentHealth;
+
+    [Inject]
+    public void Construct(SignalBus signalBus) => _signalBus = signalBus;
     void Start() => Initialize();
     private void Initialize()
     {
@@ -25,7 +29,7 @@ public class PlayerHealthController : MonoBehaviour
         if(_currentHealth <= 0)
         {
             _currentHealth = 0;
-            OnDeath?.Invoke();
+            _signalBus.Fire(new GameSignal.OnPlayerModeChangedSignal(MyGame.Core.Enums.PlayerMode.Death));
         }
     }
 }

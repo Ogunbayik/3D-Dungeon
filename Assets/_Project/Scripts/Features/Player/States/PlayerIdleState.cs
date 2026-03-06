@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Zenject;
 
 public class PlayerIdleState : PlayerGroundedState
 {
-    public PlayerIdleState(PlayerBase player, PlayerHealthController healthController) : base(player, healthController) { }
+    public PlayerIdleState(PlayerBase player, SignalBus signalBus) : base(player, signalBus) { }
     public override void EnterState()
     {
         base.EnterState();
