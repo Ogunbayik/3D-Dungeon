@@ -8,5 +8,5 @@ public interface IInputService
     float VerticalInput();
     bool PressedJump();
     bool PressedAttack();
-
+    bool PressedCombatMode();
 }

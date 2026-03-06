@@ -5,9 +5,9 @@ using UnityEngine;
 public class Slime : EnemyBase
 {
 
-    void Start()
+    public override void Start()
     {
-        
+        base.Start();
     }
 
     // Update is called once per frame

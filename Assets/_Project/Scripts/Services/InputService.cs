@@ -8,4 +8,5 @@ public class InputService : IInputService
     public float VerticalInput() => Input.GetAxis(GameConstant.PlayerInput.VERTICAL_INPUT);
     public bool PressedJump() => Input.GetKeyDown(KeyCode.Space);
     public bool PressedAttack() => Input.GetMouseButtonDown(0);
+    public bool PressedCombatMode() => Input.GetKeyDown(KeyCode.C);
 }

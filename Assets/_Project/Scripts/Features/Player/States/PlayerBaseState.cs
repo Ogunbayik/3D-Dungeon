@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MyGame.Core.Enums;
 
 public abstract class PlayerBaseState : IState
 {
@@ -21,7 +22,8 @@ public abstract class PlayerBaseState : IState
     {
         _healthController.OnDeath -= HealthController_OnDeath;
     }
-
     private void HealthController_OnDeath() => _stateMachine.SwitchState<PlayerDeathState>();
     public abstract void Tick();
+
+    
 }

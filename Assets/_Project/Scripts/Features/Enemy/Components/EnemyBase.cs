@@ -25,11 +25,15 @@ public class EnemyBase : MonoBehaviour
     public void Construct(AnimationController animationController)
     {
         _animationController = animationController;
-    }
 
+        _initialPosition = transform.position;
+    }
     public AnimationController AnimationController => _animationController;
     public EnemyData Data => _data;
-    void Start() => _initialPosition = transform.position;
+    public virtual void Start()
+    {
+
+    }
     public void MoveTo(Vector3 targetPosition)
     {
         targetPosition.y = 0f;
@@ -43,9 +47,12 @@ public class EnemyBase : MonoBehaviour
     }
     public Vector3 GetPatrolPosition()
     {
+        var randomDistance = Random.Range(0, _data.PatrolDistance);
         var randomPosition = Random.insideUnitSphere;
+        randomPosition.y = 0f;
+        randomPosition.Normalize();
 
-        var targetPosition = new Vector3(randomPosition.x, 0f, randomPosition.z) * _data.PatrolDistance;
+        var targetPosition = randomPosition * randomDistance;
         return _initialPosition + targetPosition;
     }
     public float GetWaitTime() => Random.Range(_data.MinWaitTime, _data.MaxWaitTime);

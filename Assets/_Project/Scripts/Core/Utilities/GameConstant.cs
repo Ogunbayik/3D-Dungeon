@@ -48,4 +48,9 @@ public static class GameConstant
     {
         public const float JumpGravityCoefficient = -2f;
     }
+    public class CameraSettings
+    {
+        public const int ACTIVE_PRIORITY = 10;
+        public const int DEACTIVE_PRIORITY = 1;
+    }
 }

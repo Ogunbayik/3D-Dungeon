@@ -19,3 +19,4 @@ MonoBehaviour:
   _groundedGravity: -2
   _attackCheckTime: 0.22
   _attackDamage: 10
+  _combatMoveSpeed: 2
