@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7207530003914046071}
   - component: {fileID: 8483147761785905577}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Slime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4930379017679999611}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6389069617594102764}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: AttackCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +152,7 @@ Transform:
   m_GameObject: {fileID: 2225001153598401263}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.45, z: 0.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -172,7 +172,7 @@ GameObject:
   - component: {fileID: 8592491445483323745}
   - component: {fileID: 153297018086998376}
   - component: {fileID: 2530106983703017402}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Slime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -214,10 +214,8 @@ MonoBehaviour:
   _checkLayer:
     serializedVersion: 2
     m_Bits: 128
-  _attackRadius: 0
-  _playerLayer:
-    serializedVersion: 2
-    m_Bits: 0
+  _attackCheck: {fileID: 6389069617594102764}
+  _attackRadius: 0.25
 --- !u!114 &5454663350393245934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -291,7 +289,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9099252062671660483}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Crown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -323,7 +321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3777581290437346639}
   - component: {fileID: 648316140790428682}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: SlimeVisual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -379,7 +377,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3653658220128924253}
   - component: {fileID: 8274990866998265108}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: EnemyInstaller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -422,7 +420,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1751480692614713832}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Side_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -453,7 +451,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5742644934087523805}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: UpperEyeCover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -484,7 +482,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7531130671751276438}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -517,7 +515,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7551625129696447651}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Spine01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -551,7 +549,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8555542684301632915}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Side_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -582,7 +580,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8773251088993128320}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: EyeBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -613,7 +611,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8441045168601172033}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: EyeCTRL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -647,7 +645,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5861912658834123499}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: BottomEyeCover
   m_TagString: Untagged
   m_Icon: {fileID: 0}

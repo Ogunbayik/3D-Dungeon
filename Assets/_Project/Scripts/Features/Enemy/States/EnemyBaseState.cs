@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Zenject;
 
 public abstract class EnemyBaseState : IState
 {
@@ -31,4 +32,6 @@ public abstract class EnemyBaseState : IState
         if (_enemy.CheckPlayerInArea() != null)
             _stateMachine.SwitchState<EnemyChaseState>();
     }
+
+    protected void OnPlayerDeath() => _stateMachine.SwitchState<EnemyPatrolState>();
 }

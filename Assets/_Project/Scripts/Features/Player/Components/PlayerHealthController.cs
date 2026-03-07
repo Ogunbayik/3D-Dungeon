@@ -22,14 +22,15 @@ public class PlayerHealthController : MonoBehaviour
     public void DecreaseHealthSequence()
     {
         //TODO Animasyon ile Player'ýn can azaltýlacak ve UI güncellenecek
-        Debug.Log("Decrease Player Health");
-
         _currentHealth--;
 
-        if(_currentHealth <= 0)
-        {
-            _currentHealth = 0;
-            _signalBus.Fire(new GameSignal.OnPlayerModeChangedSignal(MyGame.Core.Enums.PlayerMode.Death));
-        }
+        if (_currentHealth <= 0)
+            HandleDeath();
+    }
+    private void HandleDeath()
+    {
+        _currentHealth = 0;
+        gameObject.layer = GameConstant.GameLayer.PLAYER_DEATH_LAYER;
+        _signalBus.Fire(new GameSignal.OnPlayerModeChangedSignal(MyGame.Core.Enums.PlayerMode.Death));
     }
 }

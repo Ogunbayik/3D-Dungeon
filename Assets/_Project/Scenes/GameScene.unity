@@ -261,7 +261,7 @@ MonoBehaviour:
   - m_Script
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
-  m_Priority: 10
+  m_Priority: 11
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 358997261}
   m_Follow: {fileID: 358997261}
@@ -1536,37 +1536,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6389069617594102764, guid: e7e1174564a579745b9eba6262c9e789,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.45
-      objectReference: {fileID: 0}
-    - target: {fileID: 6389069617594102764, guid: e7e1174564a579745b9eba6262c9e789,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 6805740166720929212, guid: e7e1174564a579745b9eba6262c9e789,
-        type: 3}
-      propertyPath: _attackCheck
-      value: 
-      objectReference: {fileID: 2090890668}
-    - target: {fileID: 6805740166720929212, guid: e7e1174564a579745b9eba6262c9e789,
-        type: 3}
-      propertyPath: _attackRadius
-      value: 0.25
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7e1174564a579745b9eba6262c9e789, type: 3}
---- !u!4 &2090890668 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6389069617594102764, guid: e7e1174564a579745b9eba6262c9e789,
-    type: 3}
-  m_PrefabInstance: {fileID: 2090890667}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2132509767
 GameObject:
   m_ObjectHideFlags: 0

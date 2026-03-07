@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Zenject;
 
 public class EnemyPatrolState : EnemyBaseState
 {
@@ -12,7 +13,6 @@ public class EnemyPatrolState : EnemyBaseState
         base.EnterState();
 
         _patrolPosition = _enemy.GetPatrolPosition();
-        Debug.Log($"X: {_patrolPosition.x}, Y: {_patrolPosition.y}, Z: {_patrolPosition.z}");
         _enemy.SetMovementSpeed(_enemy.Data.MovementSpeed);
         _enemy.AnimationController.PlayAnimation(GameConstant.EnemyAnimationData.MOVE_HASH, GameConstant.AnimationSettings.QUICK_TRANSITION);
     }

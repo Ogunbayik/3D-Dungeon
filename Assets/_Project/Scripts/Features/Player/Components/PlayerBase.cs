@@ -61,7 +61,7 @@ public class PlayerBase : MonoBehaviour
         else
             _velocityY += Physics.gravity.y * _data.GravityMultiplier * Time.deltaTime;
     }
-    public void HandleJump() => _velocityY = Mathf.Sqrt(_data.JumpHeight * GameConstant.GameSettings.JumpGravityCoefficient * Physics.gravity.y);
+    public void HandleJump() => _velocityY = Mathf.Sqrt(_data.JumpHeight * GameConstant.GameSettings.JUMPGRAVITYCOEFFICIENT * Physics.gravity.y);
     public void Move(Vector3 movementDirection)
     {
         Vector3 finalMovement = movementDirection * _data.MovementSpeed;

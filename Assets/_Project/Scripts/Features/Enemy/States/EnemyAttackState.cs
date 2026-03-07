@@ -1,15 +1,21 @@
+using Cysharp.Threading.Tasks;
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using Cysharp.Threading.Tasks;
 using System.Threading;
-using System;
+using UnityEngine;
+using Zenject;
 
 public class EnemyAttackState : EnemyBaseState
 {
     private CancellationTokenSource _cts;
 
-    public EnemyAttackState(EnemyBase enemy, EnemyHealthController healthController) : base(enemy, healthController) { }
+    private SignalBus _signalBus;
+
+    public EnemyAttackState(SignalBus signalBus,EnemyBase enemy, EnemyHealthController healthController) : base(enemy, healthController) 
+    {
+        _signalBus = signalBus;
+    }
 
     public override void EnterState()
     {
@@ -18,6 +24,8 @@ public class EnemyAttackState : EnemyBaseState
         base.EnterState();
 
         AttackSequence(_cts.Token).Forget();
+
+        _signalBus.Subscribe<GameSignal.OnPlayerModeChangedSignal>(OnPlayerDeath);
     }
 
     public override void ExitState()
@@ -26,6 +34,7 @@ public class EnemyAttackState : EnemyBaseState
 
         _cts?.Cancel();
         _cts?.Dispose();
+        _signalBus.Unsubscribe<GameSignal.OnPlayerModeChangedSignal>(OnPlayerDeath);
     }
     public override void Tick()
     {

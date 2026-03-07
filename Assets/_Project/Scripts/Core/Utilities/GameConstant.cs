@@ -46,11 +46,18 @@ public static class GameConstant
     }
     public class GameSettings
     {
-        public const float JumpGravityCoefficient = -2f;
+        public const float JUMPGRAVITYCOEFFICIENT = -2f;
     }
     public class CameraSettings
     {
         public const int ACTIVE_PRIORITY = 10;
         public const int DEACTIVE_PRIORITY = 1;
+    }
+    
+    public class GameLayer
+    {
+        public const int PLAYER_LAYER = 7;
+        public const int PLAYER_DEATH_LAYER = 8;
+        public const int ENEMY_LAYER = 9;
     }
 }
