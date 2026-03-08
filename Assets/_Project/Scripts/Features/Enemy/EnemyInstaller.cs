@@ -7,7 +7,7 @@ public class EnemyInstaller : MonoInstaller
     {
         Container.Bind<EnemyBase>().FromComponentOnRoot().AsSingle();
         Container.Bind<EnemyHealthController>().FromComponentOnRoot().AsSingle();
-        Container.Bind<EnemyHealthBar>().FromComponentInHierarchy().AsSingle();
+        Container.Bind<EnemyHealthDisplay>().FromComponentInHierarchy().AsSingle();
 
         Container.Bind<Animator>().FromComponentInHierarchy().AsSingle();
         Container.Bind<AnimationController>().AsSingle();

@@ -6,23 +6,27 @@ using Zenject;
 
 public class PlayerHealthController : MonoBehaviour
 {
+    private PlayerBase _player;
     private SignalBus _signalBus;
 
-    public int HealthCount;
-
-    private float _currentHealth;
+    private int _currentHealth;
 
     [Inject]
-    public void Construct(SignalBus signalBus) => _signalBus = signalBus;
+    public void Construct(PlayerBase player, SignalBus signalBus)
+    {
+        _player = player;
+        _signalBus = signalBus;
+    }
     void Start() => Initialize();
     private void Initialize()
     {
-        _currentHealth = HealthCount;
+        _currentHealth = _player.Data.MaximumHealth;
     }
     public void DecreaseHealthSequence()
     {
-        //TODO Animasyon ile Player'ýn can azaltýlacak ve UI güncellenecek
         _currentHealth--;
+
+        _signalBus.Fire(new GameSignal.OnPlayerHealthChangedSignal(_currentHealth));
 
         if (_currentHealth <= 0)
             HandleDeath();

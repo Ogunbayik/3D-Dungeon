@@ -8,6 +8,7 @@ public class SignalInstaller : MonoInstaller
         SignalBusInstaller.Install(Container);
 
         Container.DeclareSignal<GameSignal.OnPlayerModeChangedSignal>();
+        Container.DeclareSignal<GameSignal.OnPlayerHealthChangedSignal>();
 
         Container.BindSignal<GameSignal.OnPlayerModeChangedSignal>()
             .ToMethod<CameraManager>(x => x.ToggleCamera)

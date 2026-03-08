@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _movementSpeed: 4
   _rotationSpeed: 8
+  _maximumHealth: 3
   _jumpHeight: 6
   _gravityMultiplier: 3
   _groundedGravity: -2
   _attackCheckTime: 0.22
   _attackDamage: 10
-  _combatMoveSpeed: 2
