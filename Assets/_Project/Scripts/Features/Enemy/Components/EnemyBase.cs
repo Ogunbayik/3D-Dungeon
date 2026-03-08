@@ -28,8 +28,8 @@ public class EnemyBase : MonoBehaviour
 
         _initialPosition = transform.position;
     }
-    public AnimationController AnimationController => _animationController;
     public EnemyData Data => _data;
+    public AnimationController AnimationController => _animationController;
     public virtual void Start()
     {
 

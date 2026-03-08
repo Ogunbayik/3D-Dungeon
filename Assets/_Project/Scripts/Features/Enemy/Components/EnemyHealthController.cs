@@ -2,20 +2,23 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Zenject;
 
 public class EnemyHealthController : MonoBehaviour
 {
+    private EnemyBase _enemy;
+
     public event Action<int> OnHealthChanged;
     public event Action OnDeath;
 
-    public int _maxHealth;
-
     private int _currentHealth;
 
+    [Inject]
+    public void Construct(EnemyBase enemy) => _enemy = enemy;
     private void Start() => Initialize();
     private void Initialize()
     {
-        _currentHealth = _maxHealth;
+        _currentHealth = _enemy.Data.MaximumHealth;
     }
     public void TakeDamage(int damageAmount)
     {

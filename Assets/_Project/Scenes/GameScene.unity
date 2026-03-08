@@ -654,7 +654,7 @@ MonoBehaviour:
   _attackRadius: 0.5
   _attackLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 512
 --- !u!114 &358997265
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -7,7 +7,10 @@ public class BaseData : ScriptableObject
     [Header("Movement Settings")]
     [SerializeField] private float _movementSpeed;
     [SerializeField] private float _rotationSpeed;
+    [Header("Health Settings")]
+    [SerializeField] private int _maximumHealth;
 
     public float MovementSpeed => _movementSpeed;
     public float RotationSpeed => _rotationSpeed;
+    public int MaximumHealth => _maximumHealth;
 }

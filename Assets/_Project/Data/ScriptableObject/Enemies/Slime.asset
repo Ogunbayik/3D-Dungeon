@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _movementSpeed: 1
   _rotationSpeed: 3
+  _maximumHealth: 25
   _patrolDistance: 8
   _chaseSpeed: 2
   _minWaitTime: 1.5
