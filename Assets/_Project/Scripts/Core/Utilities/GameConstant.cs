@@ -4,6 +4,10 @@ using UnityEngine;
 
 public static class GameConstant
 {
+    public class GameTag
+    {
+        public const string PLAYER = "Player";
+    }
     public class PlayerInput
     {
         public const string HORIZONTAL_INPUT = "Horizontal";

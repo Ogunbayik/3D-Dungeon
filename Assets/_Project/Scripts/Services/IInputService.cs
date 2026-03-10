@@ -9,4 +9,5 @@ public interface IInputService
     bool PressedJump();
     bool PressedAttack();
     bool PressedCombatMode();
+    bool PressedInteract();
 }

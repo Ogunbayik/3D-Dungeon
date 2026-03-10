@@ -3,7 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|c:\\users\\ogun\\unityprojects\\3d-dungeon\\assets\\_project\\scripts\\infrastructure\\installers\\signalinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|c:\\users\\ogun\\unityprojects\\3d-dungeon\\assets\\_project\\dungeongate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\_project\\dungeongate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|c:\\users\\ogun\\unityprojects\\3d-dungeon\\assets\\_project\\scripts\\core\\utilities\\gamesignal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\_project\\scripts\\core\\utilities\\gamesignal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\assets\\_project\\scripts\\infrastructure\\installers\\signalinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{037F8F75-5D76-98DE-679D-A5DAF9A24AF9}|Assembly-CSharp.csproj|solutionrelative:assets\\_project\\scripts\\infrastructure\\installers\\signalinstaller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,17 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameSignal.cs",
+              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\_Project\\Scripts\\Core\\Utilities\\GameSignal.cs",
+              "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Core\\Utilities\\GameSignal.cs",
+              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\_Project\\Scripts\\Core\\Utilities\\GameSignal.cs",
+              "RelativeToolTip": "Assets\\_Project\\Scripts\\Core\\Utilities\\GameSignal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T14:08:48.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DungeonGate.cs",
+              "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\_Project\\DungeonGate.cs",
+              "RelativeDocumentMoniker": "Assets\\_Project\\DungeonGate.cs",
+              "ToolTip": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\_Project\\DungeonGate.cs",
+              "RelativeToolTip": "Assets\\_Project\\DungeonGate.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAADwvxcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T13:34:30.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "SignalInstaller.cs",
               "DocumentMoniker": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\_Project\\Scripts\\Infrastructure\\Installers\\SignalInstaller.cs",
               "RelativeDocumentMoniker": "Assets\\_Project\\Scripts\\Infrastructure\\Installers\\SignalInstaller.cs",
               "ToolTip": "C:\\Users\\ogun\\UnityProjects\\3D-Dungeon\\Assets\\_Project\\Scripts\\Infrastructure\\Installers\\SignalInstaller.cs",
               "RelativeToolTip": "Assets\\_Project\\Scripts\\Infrastructure\\Installers\\SignalInstaller.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-08T14:33:23.844Z",
               "EditorCaption": ""

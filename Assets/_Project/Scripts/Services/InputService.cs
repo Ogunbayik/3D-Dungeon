@@ -9,4 +9,5 @@ public class InputService : IInputService
     public bool PressedJump() => Input.GetKeyDown(KeyCode.Space);
     public bool PressedAttack() => Input.GetMouseButtonDown(0);
     public bool PressedCombatMode() => Input.GetKeyDown(KeyCode.C);
+    public bool PressedInteract() => Input.GetKeyDown(KeyCode.E);
 }

@@ -84,6 +84,7 @@ public class PlayerBase : MonoBehaviour
     public bool PressedCombatMode() => _input.PressedCombatMode();
     public bool PressedAttack() => _input.PressedAttack();
     public bool PressedJump() => _input.PressedJump();
+    public bool PressedInteract() => _input.PressedInteract();
     public bool IsGrounded() => Physics.CheckSphere(_groundCheck.position, _checkRadius, _checkLayer);
     public EnemyHealthController HasValidTarget()
     {
